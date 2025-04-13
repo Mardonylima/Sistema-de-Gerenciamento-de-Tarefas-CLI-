@@ -16,7 +16,7 @@ def main():
         if opcao == "1":
             title = input("Título: ")
             desc = input("Descrição: ")
-            manager.add_task(title, desc,)
+            manager.add_task(title, desc)
 
         elif opcao == "2":
             manager.list_tasks()
@@ -28,6 +28,7 @@ def main():
         elif opcao == "4":
             id_ = int(input("ID da tarefa: "))
             manager.remove_task(id_)
+
 
         elif opcao == "0":
             print("Saindo...")
