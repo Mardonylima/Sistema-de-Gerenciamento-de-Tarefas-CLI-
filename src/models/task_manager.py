@@ -27,6 +27,7 @@ class TaskManager:
         for task in self.tasks:
             if task.id == task_id:
                 task.mark_as_completed()
+                print(f"Tarefa com id {task_id} foi concluída!")
                 break
-            else:
-                print(f"Tarefa com id {task_id} não encontrada.")
+        else:
+            print(f"Tarefa com id {task_id} não encontrada.")
